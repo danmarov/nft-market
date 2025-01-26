@@ -76,17 +76,12 @@ export default function GiftPage() {
       <Fragment>{product && <ProductCard item={product} />}</Fragment>
       <BottomBar>
         <MainButton
-          text={`Buy ${product!.price} TON`}
+          text={`Buy (${product!.price} TON)`}
           onClick={() => WebApp.HapticFeedback.notificationOccurred("error")}
           //   progress={true}
           //   hasShineEffect
           color="#0098eb"
         />
-        {/* <SecondaryButton
-          text="Cancel"
-          position="bottom"
-          onClick={() => alert("cancelled")}
-        /> */}
       </BottomBar>
       <BackButton onClick={goBack} />
     </MainLayout>
